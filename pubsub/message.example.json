@@ -1,0 +1,54 @@
+{
+    "insertId": "-4ftcl0c4bt",
+    "logName": "projects/my-project-123456/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+        "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+        "authenticationInfo": {
+            "principalEmail": "example@mail.com"
+        },
+        "authorizationInfo": [
+            {
+                "granted": true,
+                "permission": "resourcemanager.projects.create",
+                "resource": "organizations/111111111111",
+                "resourceAttributes": {}
+            },
+            {
+                "resourceAttributes": {}
+            }
+        ],
+        "methodName": "CreateProject",
+        "request": {
+            "@type": "type.googleapis.com/google.cloudresourcemanager.v1.CreateProjectRequest",
+            "project": {
+                "createTime": "2020-11-12T09:19:44.986Z",
+                "lifecycleState": "ACTIVE",
+                "name": "demo-project-x",
+                "parent": {
+                    "id": "594891041605",
+                    "type": "organization"
+                },
+                "projectId": "my-project-123456",
+                "projectNumber": "985797113615"
+            }
+        },
+        "requestMetadata": {
+            "callerIp": "88.1.66.34",
+            "callerSuppliedUserAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0,gzip(gfe)",
+            "destinationAttributes": {},
+            "requestAttributes": {}
+        },
+        "resourceName": "projects/my-project-123456",
+        "serviceName": "cloudresourcemanager.googleapis.com",
+        "status": {}
+    },
+    "receiveTimestamp": "2020-11-12T09:19:48.13672189Z",
+    "resource": {
+        "labels": {
+            "project_id": "my-project-123456"
+        },
+        "type": "project"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2020-11-12T09:19:47.377Z"
+}
